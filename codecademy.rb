@@ -1431,19 +1431,199 @@ end
 # err = SuperBadError.new
 # err.display_error
 
+#example of inheritance 
+# class SchoolNava
+#   def english_teacher
+#     puts "i teach english subject"
+#   end 
+# end 
 
-class SchoolNava
-  def english_teacher
-    puts "i teach english subject"
+# class  SchoolMvmt < SchoolNava
+# end 
+
+# eng = SchoolMvmt.new 
+
+# eng.english_teacher
+
+
+
+# class Application
+#   def initialize(name)
+#     @name = name
+#   end
+# end
+
+# Add your code below!
+
+# class MyApp < Application
+# end 
+
+
+
+# OVERRIDE ON A CLASS WHILE INHARITANCE
+# class Creature
+#   def initialize(name)
+#     @name = name
+#   end
+  
+#   def fight
+#     return "Punch to the chops!"
+#   end
+# end
+
+# Add your code below!
+
+# class Dragon < Creature
+# def fight
+# return "Breathes fire!" 
+# end 
+# end 
+
+
+# class Creature
+#   def initialize(name)
+#     @name = name
+#   end
+  
+#   def fight
+#     return "Punch to the chops!"
+#   end
+# end
+
+# # Add your code below!
+
+# class Dragon < Creature
+# def fight
+# puts "Instead of breathing fire. . . "
+# super
+# end 
+# end 
+
+
+#Superclass Mismatch
+# we can inharit from one class only 
+# while inharit from more than one class it will give a error 
+# super class mismatched 
+
+#example 
+# class Creature
+#   def initialize(name)
+#     @name = name
+#   end
+# end
+
+# class Person
+#   def initialize(name)
+#     @name = name
+#   end
+# end
+
+# class Dragon < Creature; end
+# class Dragon < Person; end
+
+
+
+
+# class Message 
+#   @@messages_sent = 0
+#   def initialize(from, to)
+#   @from = from
+#   @to = to 
+#   @@messages_sent  +=1 
+#   end 
+#   end 
+
+
+#   class Message 
+#     @@messages_sent = 0
+#     def initialize(from, to)
+#     @from = from
+#     @to = to 
+#     @@messages_sent  +=1 
+#     end 
+#     end 
+    
+#     my_message = Message.new("Rajeev", "Rishu")
+
+
+
+#     class Message 
+#       @@messages_sent = 0
+#       def initialize(from, to)
+#       @from = from
+#       @to = to 
+#       @@messages_sent  +=1 
+#       end 
+#       end 
+      
+#       my_message = Message.new("Rajeev", "Rishu")
+      
+      
+#       class Email < Message
+#       def initialize(subject)
+#       @subject = subject
+#       end 
+#       end 
+
+
+#       class Message 
+#         @@messages_sent = 0
+#         def initialize(from, to)
+#         @from = from
+#         @to = to 
+#         @@messages_sent  +=1 
+#         end 
+#         end 
+        
+#         my_message = Message.new("Rajeev", "Rishu")
+        
+        
+#         class Email < Message
+#         def initialize(from, to)
+#         super
+#         end 
+#         end 
+
+
+# class StudentTenth
+  
+#   def english_teacher
+#     puts "I teach English"
+#   end 
+
+#   def maths_teacher
+#     puts "i teach maths"
+#   end 
+
+# end 
+
+# class StudentNinth < StudentTenth
+  
+# end 
+
+# @tenth = StudentTenth.new
+#  puts @tenth.english_teacher
+#  puts @tenth.maths_teacher
+
+
+#  ninth = StudentNinth.new
+#  puts ninth.english_teacher
+
+
+
+# MULTIPLE INHERITANCE 
+
+module A 
+  def a1
+    puts "We are in a1 mathod of module A" 
+  end 
+
+  def a2
+    puts "we are in a2 mathod of module A"
   end 
 end 
 
-class  SchoolMvmt < SchoolNava
+
+module B
+  
 end 
-
-eng = SchoolMvmt.new 
-
-eng.english_teacher
-
-
-

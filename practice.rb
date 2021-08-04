@@ -285,6 +285,40 @@ Literal % character.
 
 
 #normally use the collect method when you want to do something with each of the values to get the new array. 
-a = [1,2,3,4,5]
-b = a.collect do |x| 10*x end
-puts b
+# a = [1,2,3,4,5]
+# b = a.collect do |x| 10*x end
+# puts b
+
+# age = 2
+
+# case age 
+
+# when 0 .. 2 then puts "baby"
+# when 3 .. 6 then  puts "little child"
+# when 7 .. 12 then puts "child"
+# when 13 .. 18 then  puts "youth"
+# else 
+#   puts "adult"
+
+# end 
+
+
+# class Student
+# @@name = "sameer"
+
+#   def ninth_mathod
+#     puts @@name
+#   end 
+
+#   def tenth_mathod
+#     puts @@name 
+#   end 
+
+# end 
+
+
+# stud1 = Student.new
+# stud1.ninth_mathod
+# stud1.tenth_mathod
+
+
